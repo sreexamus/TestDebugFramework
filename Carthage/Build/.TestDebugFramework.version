@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v1.0",
+  "iOS" : [
+    {
+      "name" : "TestDebugFramework",
+      "hash" : "9b3c48fdb1acb970a2d28ab668eb899e6a26e42d6e8cd10d2bdfc6793c579f23",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}
