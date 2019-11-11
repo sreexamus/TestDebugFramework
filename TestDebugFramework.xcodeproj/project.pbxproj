@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		78C313BA23790A2F0067918E /* TestDebugFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C313B823790A2F0067918E /* TestDebugFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C313C123790A440067918E /* TestDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C313C023790A440067918E /* TestDebug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		78C313B523790A2F0067918E /* TestDebugFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestDebugFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C313B823790A2F0067918E /* TestDebugFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDebugFramework.h; sourceTree = "<group>"; };
 		78C313B923790A2F0067918E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C313C023790A440067918E /* TestDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDebug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				78C313B823790A2F0067918E /* TestDebugFramework.h */,
 				78C313B923790A2F0067918E /* Info.plist */,
+				78C313C023790A440067918E /* TestDebug.swift */,
 			);
 			path = TestDebugFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					78C313B423790A2F0067918E = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C313C123790A440067918E /* TestDebug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		78C313BE23790A2F0067918E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TYAD629S9N;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.modules.debugtest.TestDebugFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		78C313BF23790A2F0067918E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TYAD629S9N;
